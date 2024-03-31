@@ -1,0 +1,26 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    margin: 0;
+    
+    .form {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #15223b;
+        color: white;
+        font-size: larger;
+        
+        .textBox {
+            flex-grow: 10;
+        }
+        
+        .submitBtn {
+            flex-grow: 1;
+        }
+    }
+}

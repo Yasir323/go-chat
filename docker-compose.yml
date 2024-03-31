@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  frontend:
+    build: ./frontend  # Path to frontend directory containing Dockerfile
+    ports:
+      - "3000:3000"  # Map container port to host port
+    depends_on:
+      - backend  # Ensure backend service is started first
+
+  backend:
+    build: ./backend  # Path to backend directory containing Dockerfile
+    ports:
+      - "8080:8080"  # Map container port to host port
+
